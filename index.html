@@ -29,11 +29,9 @@
             //call native method
             window.WebViewJavascriptBridge.callHandler(
                 'runActionInMobile'
-                , {'type': 'get_auth_token', 'data': {}}
+                , {'type':'runActionInMobile','data':{'type':'get_auth_token'}}
                 , function(responseData) {
-                    var myobj = JSON.parse(responseData);
-                    var authToken = myobj.auth_token
-                    document.getElementById("show").innerHTML = "res = \n" + authToken;
+                    document.getElementById("show").innerHTML = "send get responseData from java,\ndata = " + responseData
                 }
             );
         }
