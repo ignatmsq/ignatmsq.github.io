@@ -1,0 +1,16 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#integrationOptions {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#toggleWebView {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
